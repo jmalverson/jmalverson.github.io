@@ -1,0 +1,250 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/globalstyle.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<nav
+				class="navbar navbar-expand-xl navbar-light navbar-toggleable-lg navbar-inverse"
+			>
+				<a class="navbar-brand" href="index.html"
+					><img src="images/logo-sm.png" alt=""
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-Nav">
+						<li class="nav-item">
+							<a class="nav-link fa fa-home" href="index.html"> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fa fa-info" href="#"> About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fa fa-user" href="Signup.html"> Sign-up</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fa fa-book" href="Login.html"> Login</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div id="BodyContent" class="container-fluid border border-dark">
+				<div class="container-fluid">
+					<div class="content-header">
+						<div class="title-primary text-center">
+							<h3><i class="fa fa-user text-black-50" aria-hidden="true"
+								>Pre-Register Now to access the meDPulse!</i
+							></h3>
+						</div>
+						<hr />
+					</div>
+					<div
+						class="validation-summary-valid text-danger"
+						data-valmsg-summary="true"
+					>
+						<ul>
+							<li style="display: none;"></li>
+						</ul>
+					</div>
+
+					<form action="/Home/SignUp" method="post" novalidate="novalidate">
+						<input
+							name="__RequestVerificationToken"
+							type="hidden"
+							value="_P3ZS1Yn9KKCCjyUZsjhV79StR6ivsNL9MkYrxSVyNgdUlFBicRzpcngccT87TxFNuVizqSLs3py6FoUh4EYTg86W74GCKC-G5YGcqmvm9o1"
+						/>
+						<div class="row">
+							<div class="col-md-4 col-sm-3"></div>
+							<div class="col-md-4 col-sm-3">
+								<div class="form-group row">
+									<label
+										for="FirstName"
+										>First Name</label
+									>
+										<input
+											class="form-control text-box single-line"
+											data-val="true"
+											data-val-length="The field First Name must be a string with a maximum length of 40."
+											data-val-length-max="40"
+											data-val-required="The First Name field is required."
+											id="FirstName"
+											name="FirstName"
+											type="text"
+											value=""
+										/>
+										<span
+											class="field-validation-valid"
+											data-valmsg-for="FirstName"
+											data-valmsg-replace="true"
+										></span>
+									
+								</div>
+								<div class="form-group row">
+									<label
+										for="MiddleName"
+										>Middle Name</label
+									>
+
+										<input
+											class="form-control text-box single-line"
+											data-val="true"
+											data-val-length="The field Middle Name must be a string with a maximum length of 25."
+											data-val-length-max="25"
+											data-val-required="The Middle Name field is required."
+											id="MiddleName"
+											name="MiddleName"
+											placeholder="put 'N/A' if not applicable"
+											type="text"
+											value=""
+										/>
+										<span
+											class="field-validation-valid"
+											data-valmsg-for="MiddleName"
+											data-valmsg-replace="true"
+										></span>
+								
+								</div>
+								<div class="form-group row">
+									<label
+										for="LastName"
+										>Last Name</label
+									>
+
+										<input
+											autofocus=""
+											class="form-control text-box single-line"
+											data-val="true"
+											data-val-length="The field Last Name must be a string with a maximum length of 25."
+											data-val-length-max="25"
+											data-val-required="The Last Name field is required."
+											id="LastName"
+											name="LastName"
+											type="text"
+											value=""
+										/>
+										<span
+											class="field-validation-valid"
+											data-valmsg-for="LastName"
+											data-valmsg-replace="true"
+										></span>
+								</div>
+								
+								<div class="form-group row">
+									<label
+										
+										for="email"
+										>Email</label
+									>
+								
+										<input
+											class="form-control text-box single-line"
+											data-val="true"
+											id="email"
+											name="email"
+											placeholder="edit@gmail.com"
+											type="text"
+											value=""
+										/>
+										<span
+											class="field-validation-valid"
+											data-valmsg-for="email"
+											data-valmsg-replace="true"
+										></span>
+								
+								</div>
+								<div class="form-group row">
+								
+										<label
+										
+										for="MobileNo"
+										>Mobile Number</label
+									><div class="input-group mimic-input">
+										<span class="input-group-addon">+63</span>
+										<input
+											class="form-control text-box single-line"
+											data-val="true"
+											data-val-length="The field Mobile No. must be a string with a minimum length of 10 and a maximum length of 10."
+											data-val-length-max="10"
+											data-val-length-min="10"
+											data-val-regex="The field Mobile No. must be a number with exactly 10 digits."
+											data-val-regex-pattern="^[0-9]{10}$"
+											data-val-required="The Mobile No. field is required."
+											id="MobileNo"
+											name="MobileNo"
+											type="text"
+											value=""
+											placeholder="94646901231"
+										/>
+									</div>
+									<span
+										class="field-validation-valid"
+										data-valmsg-for="MobileNo"
+										data-valmsg-replace="true"
+									></span>
+								
+								</div>
+							</div>
+						</div>
+						<input type="hidden" name="LoginPassword" value="Temp1234" />
+						<input type="hidden" name="SecAnswer" value="Temp1234" />
+						<div class="text-center">
+							<p>
+								<button type="submit" class="btn btn-primary" id="BtnSubmit">
+									Submit
+								</button>
+								<button type="submit" class="btn btn-primary" id="BtnCancel">
+									Cancel
+								</button>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+			<footer class="fixed-bottom">
+				<div id="Footer">
+					©2020 DPHealth Inc. All Rights Reserved.
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
